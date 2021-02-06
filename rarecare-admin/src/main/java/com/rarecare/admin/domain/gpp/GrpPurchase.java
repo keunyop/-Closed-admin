@@ -17,21 +17,21 @@ import lombok.ToString;
 @Getter
 @Entity
 @ToString
-public class GroupPurchaseMaster extends BaseTimeEntity {
+public class GrpPurchase extends BaseTimeEntity {
 
 	@Id
 	@GeneratedValue
-	private Long grpPurchId;
+	private Long grpPurchaseId;
 
 	@Column(length = 1000, nullable = false)
-	private String grpPurchNm;
+	private String grpPurchaseNm;
 
 	@Column(nullable = false)
-	private int progRnd;
+	private int progressRound;
 	
 	@Builder
-    public GroupPurchaseMaster(String grpPurchNm, int progRnd) {
-        this.grpPurchNm = grpPurchNm;
-        this.progRnd = progRnd;
+    public GrpPurchase(String grpPurchaseNm, int progressRound) {
+        this.grpPurchaseNm = grpPurchaseNm;
+        this.progressRound = progressRound;
     }
 }
