@@ -16,8 +16,8 @@ public class GroupPurchasePlanService {
 	private GrpPurchaseRepository grpPurchaseRepository;
 
 	public List<GroupPurchasePlanOut> getGroupPurchasePlans() {
-		return grpPurchaseRepository.findAll().stream()
-				.map(gpm -> GroupPurchasePlanOut.builder().groupPurchaseName(gpm.getGrpPurchaseNm()).build())
+		return grpPurchaseRepository.findAll().stream().map(gpm -> GroupPurchasePlanOut.builder()
+				.groupPurchaseName(gpm.getGrpPurchaseNm()).paymentPlatformDscd(gpm.getPymntPlatformDscd()).build())
 				.collect(Collectors.toList());
 	}
 }

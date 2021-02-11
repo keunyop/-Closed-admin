@@ -29,9 +29,13 @@ public class GrpPurchase extends BaseTimeEntity {
 	@Column(nullable = false)
 	private int progressRound;
 	
+	@Column(length = 2, nullable = false)
+	private String pymntPlatformDscd;
+	
 	@Builder
-    public GrpPurchase(String grpPurchaseNm, int progressRound) {
+    public GrpPurchase(String grpPurchaseNm, int progressRound, String pymntPlatformDscd) {
         this.grpPurchaseNm = grpPurchaseNm;
         this.progressRound = progressRound;
+        this.pymntPlatformDscd = pymntPlatformDscd;
     }
 }

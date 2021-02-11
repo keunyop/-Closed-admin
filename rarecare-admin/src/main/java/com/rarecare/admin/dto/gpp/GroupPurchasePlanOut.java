@@ -9,12 +9,14 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class GroupPurchasePlanOut {
-	private String  groupPurchaseName;
-    private int     progressRound;
-    
-    @Builder
-    public GroupPurchasePlanOut(String groupPurchaseName, int progressRound) {
+	private String groupPurchaseName;
+	private int progressRound;
+	private String paymentPlatformDscd;
+
+	@Builder
+	public GroupPurchasePlanOut(String groupPurchaseName, int progressRound, String paymentPlatformDscd) {
 		this.groupPurchaseName = groupPurchaseName;
 		this.progressRound = progressRound;
+		this.paymentPlatformDscd = paymentPlatformDscd;
 	}
 }
