@@ -1,6 +1,6 @@
-# Rarecare Admin
+# Admin
 
-Rarecare Admin은 (주)레어케어(https://smartstore.naver.com/) 의 내부 관리용 시스템이다.
+내부 관리용 시스템이다.
 
 - Javascript, Spring Boot, Mysql
 
