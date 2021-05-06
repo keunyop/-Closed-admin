@@ -12,7 +12,6 @@
 
 Excel로 수기 관리하던 공동구매 기획서를 시스템화 및 협력사 공유용 Excel로 부분 출력
 
-![keen](./assets/img/group_purchase.png)
 
 
 ### 2. 평판 모니터링
